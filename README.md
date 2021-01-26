@@ -2,7 +2,7 @@
 Configure work setup 
 
 
-**Installing Tools:
+**Installing Tools:**
 
     sudo apt update 
     sudo apt install snapd
@@ -21,7 +21,7 @@ Configure work setup
     sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 
-**Configure Pyenv: 
+**Configure Pyenv:** 
 
     echo "Configure PYENV"
     curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
@@ -39,7 +39,7 @@ Configure work setup
     pyenv global 3.8.5 
     exec $SHELL
 
-**Configure PipEnv: 
+**Configure PipEnv:** 
 
     python3 -m pip install --user pipx
     python3 -m pipx ensurepath
@@ -50,7 +50,7 @@ Configure work setup
     echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
     exec $SHELL
     
-**Configure Docker: 
+**Configure Docker:** 
 
     sudo apt-get install docker-ce docker-ce-cli containerd.io
     sudo groupadd docker
@@ -58,7 +58,7 @@ Configure work setup
     newgrp docker
     exec $SHELL
     
-**Configure NVM (NODEJS):
+**Configure NVM (NODEJS):**
 
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
     wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
